@@ -1,6 +1,6 @@
 # Ограничения
 
-Те же, что у ядра [`ds`](https://github.com/A1eksMa/ds).
+Те же, что у ядра [`ds`](https://github.com/DS-Pipeline/ds).
 
 | Ограничение | Почему |
 |---|---|

@@ -1,6 +1,6 @@
 # ds-loader
 
-Оркестратор процесса обновления данных для [`ds`](https://github.com/A1eksMa/ds).
+Оркестратор процесса обновления данных для [`ds`](https://github.com/DS-Pipeline/ds).
 
 Раннер за тик прогоняет упорядоченный список **стадий** (`config.stages`). Реализованы две:
 
@@ -11,7 +11,7 @@
   настроенные общие папки `watch_dirs` (конфиг — [`docs/reference/config.md`](docs/reference/config.md)).
   Для каждого нового файла архивирует его в `sources_dir/<source>/archive/`;
 - **`publish`** — вызывает `ds get` и раскладывает результат как `data/<Source>.js` +
-  `data/manifest.js` для [`ds-webui`](https://github.com/A1eksMa/ds-webui) (идемпотентно:
+  `data/manifest.js` для [`ds-webui`](https://github.com/DS-Pipeline/ds-webui) (идемпотентно:
   неизменившиеся файлы не переписываются). Формат — [`docs/reference/publish-output.md`](docs/reference/publish-output.md).
 
 На будущее — стадии жизненного цикла и сборки (см. [`docs/roadmap/`](docs/roadmap/)).
@@ -94,7 +94,7 @@ ds-loader run --once --config config.json --force-publish
 нашёлся показатель, которого раньше не было и который не объявлен в `labels[]` его
 `source.json`, или значение не парсится под объявленный там тип — такой файл `ingest` уводит
 в `quarantine/`, как и любую другую ошибку `ds` (см.
-[`../ds/docs/reference/cli.md#ds-upload`](https://github.com/A1eksMa/ds/blob/main/docs/reference/cli.md#ds-upload)).
+[`../ds/docs/reference/cli.md#ds-upload`](https://github.com/DS-Pipeline/ds/blob/main/docs/reference/cli.md#ds-upload)).
 **Следствие**: у источника, планируемого работать через `upload/`, `source.json` должен
 заранее объявлять весь ожидаемый список `labels[]` — иначе первый же файл будет отклонён
 целиком, грузить попросту не с чем сравнивать.

@@ -52,7 +52,7 @@ ledger.record(key, ...)       # ← ПЕРЕД перемещением
    no-op'ит. Не нарушает append-only (это защита на входе). Кандидат в roadmap `ds`
    (`ds upload` того же захочет, раз `ingest` теперь вызывает именно её).
 2. **Дублирующиеся по значению транзакции теперь можно чистить постфактум** — `ds compact`
-   (см. [`ds/docs/reference/cli.md#ds-compact`](https://github.com/A1eksMa/ds/blob/main/docs/reference/cli.md#ds-compact)),
+   (см. [`ds/docs/reference/cli.md#ds-compact`](https://github.com/DS-Pipeline/ds/blob/main/docs/reference/cli.md#ds-compact)),
    уже реализован в ядре. Лечит по факту (после того, как дубль уже случился), а не
    предотвращает — окно этим не закрывается, но ущерб от него обратим.
 

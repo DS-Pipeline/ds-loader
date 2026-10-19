@@ -108,7 +108,7 @@ PYTHONPATH=/path/to/target/folder python3 -m src.cli.main run --config config.js
   передаётся в каждый вызов `ds get` стадии `publish` как `--cache <path>`, безусловно.
   `ds-loader` не хранит своего состояния фолда и не решает, когда можно идти быстрым
   путём — это целиком решает сам `ds` по `struct_version` источника (см. `ds`'s
-  [ADR-0010](https://github.com/A1eksMa/ds/blob/main/docs/decisions/0010-incremental-fold-cache.md)).
+  [ADR-0010](https://github.com/DS-Pipeline/ds/blob/main/docs/decisions/0010-incremental-fold-cache.md)).
   Опубликованный `{meta, data}` не меняется — выигрыш только в скорости сборки на каждый
   тик опроса, особенно заметен на растущих источниках.
 - 102 теста (было 101 на 0.5.0a1).

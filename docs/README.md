@@ -1,6 +1,6 @@
 # Документация ds-loader
 
-`ds-loader` — оркестратор процесса обновления данных для [`ds`](https://github.com/A1eksMa/ds).
+`ds-loader` — оркестратор процесса обновления данных для [`ds`](https://github.com/DS-Pipeline/ds).
 Связка из трёх проектов:
 
 ```
